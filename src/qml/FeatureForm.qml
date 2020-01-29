@@ -260,6 +260,7 @@ Page {
           property var constraintValid: ConstraintValid
           property bool constraintsValid: form.model.constraintsValid
           property var currentFeature: form.model.featureModel.feature
+          property var currentLayer: form.model.featureModel.currentLayer
 
           active: widget !== 'Hidden'
           source: 'editorwidgets/' + ( widget || 'TextEdit' ) + '.qml'
