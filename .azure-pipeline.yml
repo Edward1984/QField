@@ -163,5 +163,10 @@ jobs:
       pathtoPublish: '$(Build.ArtifactStagingDirectory)'
       artifactName: qfield-$(Build.BuildNumber)
 
+  - script: |
+      echo on
+      cd ms-windows\osgeo4w
+      deploytogithub.cmd $(Build.ArtifactStagingDirectory)
+
 # vim: set nowrap :
 
